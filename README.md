@@ -1,6 +1,6 @@
 # Ever Oasis NTR Cheats Plugin
 
-This is a cheats plugin for EVer Oasis on 3DS. This plugin currently only supports USA & EUR.
+This is a cheats plugin for Ever Oasis on 3DS. This plugin currently only supports USA & EUR.
 
 How To Use:
 
@@ -10,4 +10,4 @@ Have any suggestions regarding the plugin? Comment in the GbaTemp Thread.
 
 GBATemp Thread: https://gbatemp.net/threads/476075/
 
-If anyone needs help, PM me on GbaTemp @ Slattz :)
+If anyone needs help, PM me on GbaTemp @ Slattz or on Discord: Slattz #0674 :)
