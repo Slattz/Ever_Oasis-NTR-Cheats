@@ -2,6 +2,7 @@
 #define NOTES_H
 
 static const char * const speednote = "Makes your player faster.\nAfter enabling this entry, return to the game & press R + D-pad Left to toggle the cheat ON or OFF.";
+static const char * const flynote = "Press L + D-Pad Right to go very high into the sky.\nPress L + D-Pad Left to go into the sky.\nPress R once in the sky to maintain the height.\nPress B to cancel any height.\nNOTE: Speed is affected after pressing R.";
 static const char * const collisionsnote = "Disables collisions, allowing walking through walls. After enabling this entry, return to the game & press R + D-pad Right to toggle the cheat ON or OFF.";
 static const char * const infhealthnote = "Gives the player infinite health, making them invincible.";
 static const char * const infspnote = "Gives the player infinite SP.";

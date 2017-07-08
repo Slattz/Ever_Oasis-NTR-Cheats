@@ -313,7 +313,7 @@ void	allSeeds(void)
 {
     for (int i = 0; i < 51; i++) 
 	{
-        WRITEU8(g_seeds + (i * 8), 0x63);
+        WRITEU8(g_seeds + (i * 8), 0x32);
     }
 }
 
@@ -321,7 +321,7 @@ void	allSlabs(void)
 {
     for (int i = 0; i < 18; i++) 
 	{
-        WRITEU8(g_slabs + (i * 8), 0x63);
+        WRITEU8(g_slabs + (i * 8), 0x1);
     }
 }
 
@@ -337,7 +337,7 @@ void	allWeapons(void)
 {
     for (int i = 0; i < 128; i++) 
 	{
-        WRITEU8(g_weapons + (i * 8), 0x5A);
+        WRITEU8(g_weapons + (i * 8), 0x32);
     }
 }
 
@@ -345,7 +345,7 @@ void	allAccessory(void)
 {
     for (int i = 0; i < 50; i++) 
 	{
-        WRITEU8(g_accessory + (i * 8), 0x63);
+        WRITEU8(g_accessory + (i * 8), 0x32);
     }
 }
 
@@ -353,7 +353,7 @@ void	allTurbans(void)
 {
     for (int i = 0; i < 8; i++) 
 	{
-        WRITEU8(g_turbans + (i * 8), 0x63);
+        WRITEU8(g_turbans + (i * 8), 0x32);
     }
 }
 
@@ -361,7 +361,7 @@ void	allClothes(void)
 {
     for (int i = 0; i < 81; i++) 
 	{
-        WRITEU8(g_clothes + (i * 8), 0x63);
+        WRITEU8(g_clothes + (i * 8), 0x32);
     }
 }
 
@@ -600,3 +600,44 @@ void    decrease_time(void)
     disableCheat(g_decrease_menu_index2);
 }
 */
+
+void	Fly(void)
+{
+	u32	point;
+	
+	if (is_pressed(BUTTON_L + BUTTON_DR))
+	{
+		point = READU32(g_speed - 0x4);
+		if (point != 0)
+		{
+			WRITEU32(point + 0x24, 0x44000000);
+		}
+	}
+	
+	if (is_pressed(BUTTON_L + BUTTON_DL))
+	{
+		point = READU32(g_speed - 0x4);
+		if (point != 0)
+		{
+			WRITEU32(point + 0x24, 0x42000000);
+		}
+	}
+	
+	if (is_pressed(BUTTON_R))
+	{
+		point = READU32(g_speed);
+		if (point != 0)
+		{
+			WRITEU16(point + 0xD, 0x0134);
+		}
+	}
+	
+	if (is_pressed(BUTTON_B))
+	{
+		point = READU32(g_speed);
+		if (point != 0)
+		{
+			WRITEU16(point + 0xD, 0x0001);
+		}
+	}
+}

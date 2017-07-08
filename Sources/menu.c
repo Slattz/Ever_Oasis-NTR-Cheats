@@ -90,6 +90,7 @@ static inline void  smenu(void)
 	new_entry_with_note("Faster Speed", speednote, Speed);
 	new_entry_with_note("Toggle Collisions", collisionsnote, Collisions);
 	new_entry_with_note("Max Dewadems", moneynote, maxMoney);
+	new_entry_with_note("Fly", flynote, Fly);
 	
 	new_spoiler("Battle Cheats");
 	{

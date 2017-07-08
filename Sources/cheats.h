@@ -103,6 +103,7 @@ void	maxMoney(void);
 void	OasisLVL(void);
 void	ShopStocker(void);
 void	QuestGauge(void);
+void	Fly(void);
 
 //Inventory
 void	allMaterials(void);
