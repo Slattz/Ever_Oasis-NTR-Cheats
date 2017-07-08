@@ -201,16 +201,16 @@ void	Collisions(void)
 
 void	infHealth(void)
 {
-    u16 maxHP;
-    u16 rainbowProt;
+    //u16 maxHP;
+    //u16 rainbowProt;
 	
 	// Load Rainbow Protection amount if any
 	rainbowProt = READU16(g_rainbowprot);
 
-	maxHP = READU16(g_maxhp);
+	//maxHP = READU16(g_maxhp);
 	
 	WRITEU16(g_health, 999);
-	WRITEU16(0x32967DFC, maxHP + rainbowProt);
+	//WRITEU16(0x32967DFC, maxHP + rainbowProt);
 	
 }
 
