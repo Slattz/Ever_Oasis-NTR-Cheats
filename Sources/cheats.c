@@ -205,7 +205,7 @@ void	infHealth(void)
     //u16 rainbowProt;
 	
 	// Load Rainbow Protection amount if any
-	rainbowProt = READU16(g_rainbowprot);
+	//rainbowProt = READU16(g_rainbowprot);
 
 	//maxHP = READU16(g_maxhp);
 	
