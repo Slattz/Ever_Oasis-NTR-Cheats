@@ -337,7 +337,7 @@ void	allWeapons(void)
 {
     for (int i = 0; i < 128; i++) 
 	{
-        WRITEU8(g_weapons + (i * 8), 0x63);
+        WRITEU8(g_weapons + (i * 8), 0x5A);
     }
 }
 
