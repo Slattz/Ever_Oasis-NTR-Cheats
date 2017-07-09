@@ -321,7 +321,7 @@ void	allSlabs(void)
 {
     for (int i = 0; i < 18; i++) 
 	{
-        WRITEU8(g_slabs + (i * 8), 0x1);
+        WRITEU8(g_slabs + (i * 8), 0x32);
     }
 }
 

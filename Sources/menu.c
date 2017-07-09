@@ -177,19 +177,19 @@ void    my_menus(void)
     if (tid == 0x1a4900)
     {
 		assign_region(EUR);
-		new_unselectable_entry("E-Oasis NTR Cheats EUR v1.1");
+		new_unselectable_entry("E-Oasis NTR Cheats EUR v1.2.1");
     }
 	
 	else if (tid == 0x1A4800)
     {
 		assign_region(USA);
-		new_unselectable_entry("E-Oasis NTR Cheats USA v1.1");
+		new_unselectable_entry("E-Oasis NTR Cheats USA v1.2.1");
     }
 	
 	else if (tid == 0x1a0000)
     {
 		//assign_region(JAP);
-		new_unselectable_entry("E-Oasis NTR Cheats JPN v1.1");
+		new_unselectable_entry("E-Oasis NTR Cheats JPN v1.2.1");
 		new_unselectable_entry("JPN is currently unsupported!");
 		new_unselectable_entry("It will be in the future!");
 		return;
