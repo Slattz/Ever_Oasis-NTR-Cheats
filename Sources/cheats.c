@@ -275,10 +275,32 @@ void	ShopStocker(void)
 		0xCB0,
 	};
 
-	for (int i = 0; i < 7; i++) 
+	for (int i = 0; i < 7; i++)
 	{
     WRITEU16(g_shopstock + diffs[i], 999);
     WRITEU16(g_shopstock + diffs[i] + 2, 999);
+    WRITEU16(g_shopstock + diffs[i] + 4, 999);
+	}
+}
+
+void	ShopBouncer(void)
+{
+	u16 diffs[] =
+	{
+		0x0,
+		0x1D0,
+		0x2B8,
+		0x89C,
+		0x910,
+		0xC3C,
+		0xCB0,
+	};
+
+	for (int i = 0; i < 7; i++)
+	{
+    WRITEU16(g_shopstock + diffs[i], 0);
+    WRITEU16(g_shopstock + diffs[i] + 2, 0);
+    WRITEU16(g_shopstock + diffs[i] + 4, 0);
 	}
 }
 

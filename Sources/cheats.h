@@ -102,6 +102,7 @@ void	maxLVL(void);
 void	maxMoney(void);
 void	OasisLVL(void);
 void	ShopStocker(void);
+void	ShopBouncer(void);
 void	QuestGauge(void);
 void	Fly(void);
 

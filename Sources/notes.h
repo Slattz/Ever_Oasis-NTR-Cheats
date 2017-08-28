@@ -13,6 +13,7 @@ static const char * const levelnote = "Makes your player the max level (30).";
 static const char * const moneynote = "Gives you ‭999999‬ Dewadems.";
 static const char * const oasisnote = "Makes your oasis the biggest size (sets it to level 20).";
 static const char * const shopstocknote = "Stocks each shop with x999 of their item.";
+static const char * const shopstockbouncernote = "Stocks each shop with x0 of their item.";
 static const char * const shopgaugenote = "Fill's the Quest Guage for each shop. After using this code, you will need to restock once to trigger the upgrade quest.";
 
 static const char * const matenote = "Gives you x99 of every Material.";
