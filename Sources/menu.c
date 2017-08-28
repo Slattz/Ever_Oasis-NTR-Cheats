@@ -115,6 +115,7 @@ static inline void  smenu(void)
 			new_entry_with_note("All Clothes", clothnote, allClothes);
 		exit_spoiler();
 		new_entry_with_note("All Stores Stocked x999", shopstocknote, ShopStocker);
+		new_entry_with_note("All Stores Stocked x0", shopstockbouncernote, ShopBouncer);
 		new_entry_with_note("Max Stores Quest EXP Gauge", shopgaugenote, QuestGauge);
 	exit_spoiler();
 	
