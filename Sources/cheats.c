@@ -327,6 +327,8 @@ void	allMaterials(void)
 {
     for (int i = 0; i < 217; i++) 
 	{
+        u8 slotcheck = READU8(g_materials + (i * 8));
+		if (slotcheck != 0)
         WRITEU8(g_materials + (i * 8), 0x63);
     }
 }
@@ -343,6 +345,8 @@ void	allSlabs(void)
 {
     for (int i = 0; i < 18; i++) 
 	{
+	u8 sslotcheck = READU8(g_slabs + (i * 8));
+		if (sslotcheck != 0)
         WRITEU8(g_slabs + (i * 8), 0x32);
     }
 }
@@ -359,6 +363,8 @@ void	allWeapons(void)
 {
     for (int i = 0; i < 128; i++) 
 	{
+	u8 wslotcheck = READU8(g_weapons + (i * 8));
+		if (wslotcheck != 0)
         WRITEU8(g_weapons + (i * 8), 0x32);
     }
 }
